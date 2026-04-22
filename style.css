@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --Dblue: #01004F;
+    --white: #fff; 
+    --black: #000;
+    --Lblack: #1e1e1e;
+    --Lyellow: #FFED96;
+}
+body{
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+.header {
+    background-color: var(--Dblue);
+    padding: 34px 81px;
+}
+.header__wrapper{
+    display: flex;
+    background-color: var(--white);
+    padding: 12px;
+    border-radius: 50px;
+    align-items: center;
+}
+.logo {
+    width: 110px;
+    height: 80px;
+    background-color: var(--Dblue);
+    padding: 8px;
+    border-radius: 40px;
+}
+.nav {
+}
+.header__list {
+    display: flex;
+    font-size: 25px;
+    gap: 100px;
+    color: var(--black);
+    margin-left: 100px;
+}
+.list__item {
+    display: flex;
+    gap: 10px;
+    transition: 0.3s;
+}
+.list__item:hover{
+    transform: translate(0, -7px);
+}
+.fa-solid {
+}
+.fa-house {
+}
+.list__item-title {
+    color: var(--black);
+}
+.fa-circle-info {
+}
+.fa-file-circle-check {
+}
+.fa-images {
+}
+
+
+.container {
+}
+.wrapper {
+}
+
+
+.hero {
+    margin-top: 10px;
+    background-image: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    gap: 400px;
+    padding: 40px;
+}
+.hero__prt1 {
+    color: var(--white);
+    margin-top: 50px;
+}
+.hero__sub-title {
+    font-size: 30px;
+}
+.hero__title {
+    font-size: 50px;
+}
+.hero__info {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+.hero__photo {
+    height: 400px;
+}
+
+
+
+.qobilyatlarim{
+    background-color:var(--Lyellow);
+    background-image: url("assets/Group 8 (1).png");
+    background-size: 1520px;
+    text-align: center;
+    padding: 50px;
+}
+.qobilyatlarim__asosiy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 10px;
+}
+.qobilyatlarim__title{
+    font-size: 70px;
+}
+.qobilyatlarim__icon{
+    font-size: 50px;
+}
+.qobilyatlarim__list{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.qobilyatlarim__list-item{
+    width: 150px;
+}
+
+.qobilyatlarim__img{
+    width: 150px;
+}
+.down{
+    align-self: flex-end;
+    animation-name: down;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.up{
+    animation-name: up;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes up {
+ 0%{
+    transform: translate(0px, 240px);
+ }
+ 50%{
+    transform:  translate(0px, 0px);
+ }
+ 100%{
+    transform: translate(0px, 240px);
+ }
+}
+
+@keyframes down {
+ 0%{
+    transform: translate(0px, -240px);
+ }
+ 50%{
+    transform:  translate(0px, 0px);
+ }
+ 100%{
+    transform: translate(0px, -240px);
+ }
+}
+.qobilyatlarim__graph{
+    margin-top: 140px;
+}
+.qobilyatlarim__diagram{
+    width: 900px;
+}
+.loyihalarim__header{
+    background: #002C7F;
+    background: linear-gradient(90deg, rgba(0, 44, 127, 1) 0%, rgba(0, 80, 229, 1) 100%);
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    font-size: 40px;
+    gap: 10px;
+    padding: 20px 30px;
+}
+.loyihalarim__list{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 40px;
+    background-image: url("assets/Group 12.png");
+    padding-bottom: 50px;
+    background-size: 100%;
+}
+.img__wrapper{
+    
+}
+.card__info{
+    
+}
+.loyihalarim__list-item{
+    width: 680px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(77, 140, 255, 1) 0% , rgba(46, 84, 153, 1) 80%);
+    padding: 10px;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.loyihalarim__list-item:hover{
+    transform: translate(0, -10px);
+}
+.loyihalarim__image{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 660px;
+    height: 300px;
+    transition: 0.3s;
+}
+.loyihalarim__image:hover{
+    transform: scale(1.03);
+}
+.loyihalarim__title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.loyihalarim__info{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.loyihalarim__btn{
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 540px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: #FFED96;
+    transition: 0.3s ease-in-out;
+}
+.loyihalarim__btn:hover{
+    transform: translate(5px , 0);
+}
+.left__one{
+    transform: translate(0, 100px);
+}
+
+
+
+.sinfim {
+}
+.sinfim__header {
+    display: flex;
+    background-color: #6E3A96;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    padding: 20px 30px;
+    gap: 10px;
+}
+.fa-angle-right{
+    font-size: 40px;
+}
+.fa-people-group{
+    font-size: 40px;
+}
+.sinfim__header-title {
+}
+.sinfim__2P {
+    padding-bottom: 120px;
+    padding-left: 30px;
+    padding-top: 80px;
+    background-image: url("assets/Group 11.png");
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sinfim__info {
+    color: var(--white);
+    letter-spacing: 2%;
+    line-height: 35px;
+}
+.sinfim__title{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1%;
+    font-family: "Caveat", cursive;
+}
+.sinfim__text {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 50px;
+    font-family: "Caveat", cursive;
+}
+.sinfim__img {
+    width: 600px;
+    border-radius: 20px;
+    border: 5px solid #B973EF;
+    transition: 0.5s;
+}
+.sinfim__img:hover{
+    transform: scale(1.2);
+}
+
+
+.oilam {
+}
+.oilam__header {
+    display: flex;
+    background-color: #008127;
+    align-items: center;
+    color: white;
+    padding: 40px 30px;
+    gap: 10px;
+}
+.oilam__bg{
+    background-image: url("assets/Group 14.png");
+    background-size: 100%;
+    height: 740px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.fa-house-chimney-user {
+    font-size: 40px;
+}
+.oilam__header-title {
+    font-size: 50px;
+}
+.fa-angle-right {
+}
+.oilam__image {
+    position: absolute;
+    width: 1300px;
+}
